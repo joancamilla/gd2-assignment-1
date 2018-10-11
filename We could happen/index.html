@@ -1,0 +1,704 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>We Could Happen</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/base.css">
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Roboto:300,400,700,900" rel="stylesheet">
+
+	<style>
+		* { transition: all .3s; }
+
+
+		body {
+      font-family: 'Gloria Hallelujah', cursive;
+			height: 450em;
+			background-color: #e6e7ff;/* For browsers that do not support gradients */
+      background-image: repeating-linear-gradient(#e6e7ff, #d8d4ef , #8c85ae, #d7b9d7, #fed0d9, #fac656, #e6e7ff); /* Standard syntax (must be last) */
+		}
+
+		.title {
+			font-size: 15em;
+			margin: 300px auto 50px auto;
+			text-align: center;
+			color: #fac656;
+		}
+
+		.author {
+			font-family: 'Roboto', sans-serif;
+			font-weight: 400;
+			font-size: 50px;
+			text-align: center;
+			color: grey;
+
+
+		}
+    .square-1 {
+      background-color: white;
+      color: #5b5b5b;
+      width: 600px;
+      margin: 300px auto 0px auto;
+      padding-top:40px;
+			padding-bottom:120px;
+      font-size: 1.8em;
+      text-align: center;
+      transform:translateX(-30px);
+      line-height: 1.5;
+      position:relative;
+    }
+
+    .square-2 {
+      background-color: #e6e7ff;
+      color: #5b5b5b;
+      width: 600px;
+      margin: -80px auto 500px auto;
+      padding-top: 100px;
+      padding-bottom:100px;
+      font-size: 1.8em;
+      text-align: center;
+      transform:translateX(180px);
+      position: relative;
+    }
+
+
+    .layer-2 .square-1 {
+      width:700px;
+      padding-top:10px;
+      padding-bottom:10px;
+      transform:translateX(-180px);
+      z-index:2;
+      line-height:2.3;
+    }
+
+    .space15 {
+      letter-spacing:15px;
+    }
+
+    .layer-2 .square-2 {
+      width:1500px;
+      padding-top:130px;
+      padding-bottom: 50px;
+      transform:translateX(0);
+      letter-spacing:30px;
+      font-family:'Roboto', sans-serif;
+      font-weight:700;
+      font-size:70px;
+      color: #8c85ae;
+      z-index:1;
+
+    }
+
+		.layer-3 .square-1 {
+			background-color: #d8d4ef;
+			z-index: 2;
+			padding-top: 70px;
+			padding-bottom:90px;
+
+
+		}
+
+		.layer-3 .square-2 {
+			background-color: #8c85ae;
+			color: white;
+			z-index:1;
+			padding-top: 150px;
+			padding-bottom: 50px;
+
+		}
+
+		.layer-4 .square-1 {
+			background-color:#8c85ae;
+      color: white;
+      width: 350px;
+			margin: 300px auto 0px 170px;
+			padding-bottom:40px;
+			z-index: 2;
+
+		}
+
+		.layer-4 .square-2 {
+			width: 380px;
+			margin:-70px auto 150px 220px;
+			padding-top: 60px;
+      padding-bottom:60px;
+			padding-left: 30px;
+		}
+
+		.layer-5 .square-1 {
+			width:1300px;
+			background-color: #e6e7ff;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 900;
+			font-size: 15em;
+			color: #8c85ae;
+			margin: 0px auto 0px auto;
+			padding-top:0px;
+			padding-bottom: 0px;
+			z-index:2;
+		}
+
+		.layer-5 .square-2 {
+			width: 1300px;
+			background-color: #8c85ae;
+			margin: -320px auto 100px auto;
+			padding-top: 280px;
+			transform:translateX(20px);
+		}
+
+		.layer-6 {
+			font-size: 2.5em;
+			color: #645d9b;
+			padding-left: 40px;
+		}
+
+		.layer-7 {
+			font-size: 4em;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 900;
+			word-spacing: 50px;
+			margin: 30px auto 300px auto;
+			text-align: center;
+			color: #645d9b;
+		}
+
+		.layer-8 .square-1 {
+			font-size: 2.5em;
+			margin: auto auto 100px 70px;
+			padding-bottom: 40px;
+			color: #8c85ae;
+		}
+
+		.layer-9 .square-1 {
+			width: 900px;
+			font-family:'Roboto', sans-serif;
+			font-size: 2.5em;
+			background-color: #e6e7ff;
+			color: #8c85ae;
+			padding-top: 10px;
+			padding-bottom: 20px;
+			padding left: 20px;
+			z-index:2;
+		}
+
+		.doublefont {
+			font-size: 2em;
+		}
+
+		.layer-9 .square-2 {
+			font-family: 'Roboto', sans-serif;
+			font-weight: 900;
+			font-size: 15em;
+			letter-spacing: 100px;
+			width: 1500px;
+			margin: -40px auto 30px auto;
+			padding-top: 50px;
+			padding-bottom: 50px;
+			padding-left: 80px;
+			transform:translateX(-30px);
+			color: #ffe2a9;
+			background-color: white;
+			text-align: center;
+
+		}
+
+		.layer-10 {
+			font-family: 'Roboto', sans-serif;
+			text-align: center;
+			letter-spacing: 80px;
+			font-size: 2.5em;
+			margin: 10px auto 300px auto;
+			color: #8c85ae;
+		}
+
+		.layer-11 {
+			text-align: center;
+			color: white;
+		}
+
+		.colorchange {
+			color: #ff33cc;
+		}
+
+		.layer-12 .square-1 {
+			margin: 30px auto 50px auto;
+      padding-top:40px;
+			padding-bottom:40px;
+			transform: translateX(400px);
+			color: #fac656;
+			background-color: #fcfae9;
+		}
+
+		.layer-13 {
+			font-family: 'Roboto', sans-serif;
+			font-weight: 900;
+			font-size: 10em;
+			color: white;
+			text-align: center;
+		}
+
+		.layer-14 {
+			font-family: 'Roboto', sans-serif;
+			text-align: center;
+			letter-spacing: 80px;
+			font-size: 2.5em;
+			margin: 10px auto 100px auto;
+			color:white;
+		}
+
+		.verse-2 {
+			margin: 10px auto 50px auto;
+		}
+
+
+		.layer-15 {
+			font-size: 1.5em;
+			text-align: right;
+			color: white;
+			margin: 0 auto 150px auto;
+
+		}
+
+		.layer-16 .square-1{
+			background-color:#8c85ae;
+	    color: white;
+  	  width: 350px;
+			margin: 300px auto 0px 170px;
+			padding-bottom:40px;
+			z-index: 2;
+		}
+
+		.layer-16 .square-2 {
+			width: 650px;
+			margin:-70px auto 150px 220px;
+			padding-top: 60px;
+	    padding-bottom:60px;
+			padding-left: 80px;
+		}
+
+		.layer-17 {
+			font-family: 'Roboto', sans-serif;
+			font-weight:300;
+			font-size: 2.5em;
+			color: white;
+			text-align: left;
+			letter-spacing: 1em;
+			margin:10px auto 0px 40px;
+		}
+
+		.layer-18 {
+			font-size: 2em;
+			color: grey;
+			text-align: left;
+			margin:10px auto 200px 40px;
+		}
+
+		.layer-17 .edit-1 {
+			text-align: center;
+		}
+
+		.layer-18 .edit-1 {
+			text-align: center;
+			margin: 10px auto 200px 900px;
+		}
+
+		.layer-17 .edit-2 {
+			text-align: right;
+			margin: 10px auto 0px auto;
+		}
+
+		.layer-18 .edit-2 {
+			text-align: right;
+			margin: 10px 50px 200px auto;
+		}
+
+		.layer-19 {
+      font-family:'Roboto', sans-serif;
+      font-weight:700;
+      font-size:4em;
+      color: #8c85ae;
+      letter-spacing:30px;
+			text-align: center;
+			margin:0px auto 50px 0px;
+		}
+
+		.layer-20 {
+			font-family:'Roboto', sans-serif;
+			font-weight:900;
+			font-size:8em;
+			color: #5b5b5b;
+			letter-spacing:80px;
+			text-align: center;
+			margin:0px auto 300px 40px;
+		}
+
+		.layer-21 {
+			font-family: 'Roboto', sans-serif;
+			font-weight:300;
+			font-size: 2.5em;
+			color: white;
+			text-align: center;
+			letter-spacing: 1em;
+			margin:200px auto 400px auto;
+		}
+		.cover img{
+			width: 100%;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<div class="title"> WE COULD HAPPEN</div>
+  <p class="author"> A J Rafael</p>
+  <div class="layer-1">
+    <div class="square-1">
+      <p>I'll hold the door<br>
+        please come in
+      </p>
+    </div>
+    <div class="square-2">
+      <p>and just sit here for a while</p>
+    </div>
+	</div>
+
+	<div class="layer-2">
+	  <div class="square-1">
+	    <p> this is my<br>
+	      <span class="space15">way of telling you</span>
+	    </p>
+	  </div>
+	  <div class="square-2">
+	    <p>I NEED YOU IN MY LIFE</p>
+	  </div>
+	</div>
+
+	<div class="layer-3">
+	  <div class="square-1">
+	    <p>it's so cold<br>
+	      without your touch
+	    </p>
+	  </div>
+	  <div class="square-2">
+	    <p>I’ve been dreaming way too much </p>
+	  </div>
+	</div>
+
+	<div class="layer-4">
+	 	<div class="square-1">
+		  <p>can we just</p>
+		</div>
+		<div class="square-2">
+		  <p> turn this into</p>
+		</div>
+	</div>
+
+	<div class="layer-5">
+		<div class="square-1 space15">
+			<p> REALITY </p>
+		</div>
+		<div class="square-2"></div>
+	</div>
+
+	<div class="layer-6 space15">
+		<p>'cause I've been</p>
+	</div>
+
+	<div class="layer-7 space15">
+		<p>THINKING 'BOUT YOU LATELY</p>
+	</div>
+
+	<div class="layer-8">
+		<div class="square-1">
+			<p>maybe you could save me</p>
+		</div>
+	</div>
+
+	<div class="layer-9">
+		<div class="square-1">
+			<p>from this <br>
+				<span class="space15 doublefont"> CRAAAAZZZYYY</span>
+			</p>
+		</div>
+		<div class="square-2">
+			<p>WORLD</p>
+		</div>
+	</div>
+
+	<div class="layer-10 doublefont">
+		<p>we live in</p>
+	</div>
+
+	<div class="layer-11 doublefont">
+		<p>And i know <span class="colorchange"> we could happen</span></p>
+	</div>
+
+	<div class="layer-12">
+		<div class="square-1">
+			<p> 'cause you know that I've been </p>
+		</div>
+	</div>
+
+	<div class="layer-13 space15">
+		<p> FEELING </p>
+	</div>
+
+	<div class="layer-14 doublefont">
+		<p>youuuu</p>
+	</div>
+
+	<div class="cover">
+		<img src="images/cover-03.png" alt="images/cover-03.png">
+	</div>
+
+
+	<div class="layer-1">
+		<div class="square-1">
+			<p>Storms they will come<br>
+				But i know,
+			</p>
+		</div>
+		<div class="square-2">
+			<p>That the sun will shine again</p>
+		</div>
+	</div>
+
+	<div class="layer-2">
+		<div class="square-1">
+			<p> He's my friend<br>
+				<span class="space15">And he says that</span>
+			</p>
+		</div>
+		<div class="square-2">
+			<p>WE BELONG TOGETHER</p>
+		</div>
+	</div>
+
+	<div class="layer-3">
+		<div class="square-1">
+			<p>I'll sing a song,<br>
+				to break the ice
+			</p>
+		</div>
+		<div class="square-2">
+			<p>Just a smile from you would suffice </p>
+		</div>
+	</div>
+
+	<div class="layer-16">
+		<div class="square-1">
+			<p>it's not me</p>
+		</div>
+		<div class="square-2">
+			<p> being nice girl this is real tonight</p>
+		</div>
+	</div>
+
+	<div class="layer-6 space15">
+		<p>'cause I've been</p>
+	</div>
+
+	<div class="layer-7 space15">
+		<p>THINKING 'BOUT YOU LATELY</p>
+	</div>
+
+	<div class="layer-8">
+		<div class="square-1">
+			<p>maybe you could save me</p>
+		</div>
+	</div>
+
+	<div class="layer-9">
+		<div class="square-1">
+			<p>from this <br>
+				<span class="space15 doublefont"> CRAAAAZZZYYY</span>
+			</p>
+		</div>
+		<div class="square-2">
+			<p>WORLD</p>
+		</div>
+	</div>
+
+	<div class="layer-10 doublefont">
+		<p>we live in</p>
+	</div>
+
+	<div class="layer-11 doublefont">
+		<p>And i know <span class="colorchange"> we could happen</span></p>
+	</div>
+
+	<div class="layer-12">
+		<div class="square-1">
+			<p> 'cause you know that I've been </p>
+		</div>
+	</div>
+
+	<div class="layer-13 space15">
+		<p> FEELING </p>
+	</div>
+
+	<div class="layer-14 doublefont verse-2">
+		<p>youuuu</p>
+	</div>
+
+	<div class="layer-15">
+		<p>(I know you want me)</p>
+	</div>
+
+	<div class="layer-17">
+		<p>there's no other</p>
+	</div>
+
+	<div class="layer-18">
+		<p>there's no other love</p>
+	</div>
+
+	<div class="layer-17">
+		<div class="edit-1">
+		<p>that i’d rather have</p>
+	</div>
+	</div>
+
+	<div class="layer-18">
+		<div class="edit-1">
+		<p>you know</p>
+	</div>
+	</div>
+
+	<div class="layer-17">
+		<div class="edit-2">
+		<p>there ain’t no one,</p>
+	</div>
+	</div>
+
+	<div class="layer-18">
+		<div class="edit-2">
+		<p>there ain’t no one else</p>
+	</div>
+	</div>
+
+	<div class="layer-19">
+			<p>I WANT YOU FOR</p>
+	</div>
+
+	<div class="layer-20">
+		<p> MYSELF</p>
+		</div>
+
+
+	<div class="layer-6 space15">
+		<p>I've been</p>
+	</div>
+
+	<div class="layer-7 space15">
+		<p>THINKING 'BOUT YOU LATELY</p>
+	</div>
+
+	<div class="layer-8">
+		<div class="square-1">
+			<p>maybe you could save me</p>
+		</div>
+	</div>
+
+	<div class="layer-9">
+		<div class="square-1">
+			<p>from this <br>
+				<span class="space15 doublefont"> CRAAAAZZZYYY</span>
+			</p>
+	</div>
+		<div class="square-2">
+			<p>WORLD</p>
+		</div>
+	</div>
+
+	<div class="layer-10 doublefont">
+		<p>we live in</p>
+	</div>
+
+	<div class="layer-11 doublefont">
+		<p>And i know <span class="colorchange"> we could happen</span></p>
+	</div>
+
+	<div class="layer-12">
+		<div class="square-1">
+			<p> 'cause you know that I've been </p>
+		</div>
+	</div>
+
+	<div class="layer-13 space15">
+		<p> FEELING </p>
+	</div>
+
+	<div class="layer-14 doublefont verse-2">
+		<p>youuuu</p>
+	</div>
+
+	<div class="layer-15">
+		<p>(I know you want me)</p>
+	</div>
+
+	<div class="layer-6 space15">
+		<p>I've been</p>
+	</div>
+
+	<div class="layer-7 space15">
+		<p>THINKING 'BOUT YOU LATELY</p>
+	</div>
+
+	<div class="layer-8">
+		<div class="square-1">
+			<p>maybe you could save me</p>
+		</div>
+	</div>
+
+	<div class="layer-9">
+		<div class="square-1">
+			<p>from this <br>
+				<span class="space15 doublefont"> CRAAAAZZZYYY</span>
+			</p>
+	</div>
+		<div class="square-2">
+			<p>WORLD</p>
+		</div>
+	</div>
+
+	<div class="layer-10 doublefont">
+		<p>we live in</p>
+	</div>
+
+	<div class="layer-11 doublefont">
+		<p>And i know <span class="colorchange"> we could happen</span></p>
+	</div>
+
+	<div class="layer-12">
+		<div class="square-1">
+			<p> 'cause you know that I've been </p>
+		</div>
+	</div>
+
+	<div class="layer-13 space15">
+		<p> FEELING </p>
+	</div>
+
+	<div class="layer-14 doublefont verse-2">
+		<p>youuuu</p>
+	</div>
+
+	<div class="layer-15">
+		<p>(I know you want me too) <br>
+		<p>(I know you want me too)</p>
+	</p>
+	</div>
+
+	<div class="layer-21">
+		<p> Oh-ooh-ooh</p>
+	</div>
+
+	<div class="layer-21">
+		<p> Bap-da-da, bap-da-da</p>
+	</div>
+	</div>
+</body>
+
+</html>
